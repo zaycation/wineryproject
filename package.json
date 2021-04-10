@@ -17,5 +17,13 @@
     "lite": "lite-server"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joeytharpe1/wineryproject.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joeytharpe1/wineryproject/issues"
+  },
+  "homepage": "https://github.com/joeytharpe1/wineryproject#readme"
 }

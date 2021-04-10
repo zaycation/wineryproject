@@ -25,7 +25,7 @@
         </div>
     </header>
     <div class="navbar navbar-expand-sm navbar-light sticky-top">
-        <div class="container">
+        <div class="container-fluid">
             <a class="navbar-brand text-white" href="#">J&R</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarWine">
                 <span class="navbar-toggler"></span>
@@ -33,7 +33,7 @@
             <div class="collapse navbar-collapse" id="navbarWine">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link text-white" href="#">Home</a>
+                        <a class="nav-link text-white" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">Club</a>
@@ -52,102 +52,103 @@
         </div>
     </div>
     <div class="page-title-container tour-header col">
-        <img src="img/tour-header.jpg" alt="tour" width="100%">
+        <img class="img-blurr" src="img/tour-header.jpg" alt="tour" width="100%">
         <div class="centered">Tour</div>
     </div>
-    <div class="row row-content">
-        <div class="col col-sm-6 mx-auto">
-            <div class="card">
-                <h3 id="scheduleHeader" class="card-header text-white text-nowrap">Schedule a Tour</h3>
-                <div class="card-body">
-                    <form id="reserveForm">
-                        <div class="form-group row">
-                            <label for="firstName" class="col-md-2 col-form-label">First Name</label>
-                            <div class="col-md-10">
-                                <input type="text" class="form-control" id="firstName" name="firstName"
-                                    placeholder="First Name" />
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
-                            <div class="col-md-10">
-                                <input type="text" class="form-control" id="lastName" name="lastName"
-                                    placeholder="Last Name" />
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
-                            <div class="col-5 col-md-3">
-                                <input type="tel" class="form-control" id="areaCode" name="areaCode"
-                                    placeholder="Area code" />
-                            </div>
-                            <div class="col-7">
-                                <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="email" class="col-md-2 col-form-label">Email</label>
-                            <div class="col-md-10">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col offset-md-2">
-                                Preferred Contact Method :
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" class="form-check-input" id="contactPhone" name="contactRadios"
-                                        value="phone" />
-                                    <label for="contactPhone" class="form-check-label">Phone</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" class="form-check-input" id="contactEmail" name="contactRadios"
-                                        value="email" />
-                                    <label for="contactEmail" class="form-check-label">Email</label>
+    <div class="container-fluid">
+        <div class="row row-content">
+            <div class="col col-sm-6 mx-auto">
+                <div class="card">
+                    <h3 id="scheduleHeader" class="card-header text-white text-nowrap">Schedule a Tour</h3>
+                    <div class="card-body">
+                        <form id="reserveForm">
+                            <div class="form-group row">
+                                <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" id="firstName" name="firstName"
+                                        placeholder="First Name" />
                                 </div>
                             </div>
-                        </div>
-                        <div class="row form-group">
-                            <label class="col-md-2 col-form-label" for="date">Date</label>
-                            <div class="col-sm-4">
-                                <input class="form-control" type="date" id="date" name="date" placeholder="mm/dd/yyyy">
+                            <div class="form-group row">
+                                <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" id="lastName" name="lastName"
+                                        placeholder="Last Name" />
+                                </div>
                             </div>
-                            <label class="col-sm-2 col-form-label"> Party Size</label>
-                            <div class="col-sm-4">
-                                <select class="form-control" name="numCampers" id="numCampers">
-                                    <option>Select...</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                </select>
+                            <div class="form-group row">
+                                <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
+                                <div class="col-5 col-md-3">
+                                    <input type="tel" class="form-control" id="areaCode" name="areaCode"
+                                        placeholder="Area code" />
+                                </div>
+                                <div class="col-7">
+                                    <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
+                                </div>
                             </div>
-                        </div>
+                            <div class="form-group row">
+                                <label for="email" class="col-md-2 col-form-label">Email</label>
+                                <div class="col-md-10">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col offset-md-2">
+                                    Preferred Contact Method :
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" id="contactPhone" name="contactRadios"
+                                            value="phone" />
+                                        <label for="contactPhone" class="form-check-label">Phone</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" id="contactEmail" name="contactRadios"
+                                            value="email" />
+                                        <label for="contactEmail" class="form-check-label">Email</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="col-md-2 col-form-label" for="date">Date</label>
+                                <div class="col-sm-4">
+                                    <input class="form-control" type="date" id="date" name="date" placeholder="mm/dd/yyyy">
+                                </div>
+                                <label class="col-sm-2 col-form-label"> Party Size</label>
+                                <div class="col-sm-4">
+                                    <select class="form-control" name="numCampers" id="numCampers">
+                                        <option>Select...</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
 
-                        <div class="form-group row">
-                            <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
-                            <div class="col-md-10">
-                                <textarea class="form-control" id="feedback" name="feedback" rows="8"></textarea>
+                            <div class="form-group row">
+                                <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                                <div class="col-md-10">
+                                    <textarea class="form-control" id="feedback" name="feedback" rows="8"></textarea>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row form-group">
-                            <div class="col">
-                                <button class="btn text-white sch-button" type="submit">Schedule</button>
+                            <div class="row form-group">
+                                <div class="col">
+                                    <button class="btn text-white sch-button" type="submit">Schedule</button>
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
 
-    <footer class="site-footer">
+    <footer class="site-footer mt-3">
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-2 offset-1">

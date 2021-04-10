@@ -20,6 +20,10 @@
     font-size: 70pt;
 }
 
+.img-blurr {
+    filter: brightness(0.5);
+}
+
 .tour-header {
         position: relative;
         text-align: center;
