@@ -1,0 +1,55 @@
+.jumbotron {
+    margin: 0;
+    padding: 30px;
+    background-image: linear-gradient(to right, #040000, #1A5653, #C4AE78);
+    color: white;
+}
+.navbar {
+    background-color:  #C4AE78;
+}
+.page-title-container {
+    padding: 40px;
+    text-align: center;
+    background-size: cover;
+    background-size: cover;
+}
+.blurr-grapes {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 70pt;
+}
+
+.tour-header {
+        position: relative;
+        text-align: center;
+        color: white;
+        font-size: 70pt;
+}
+.centered {
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-top: solid  rgb(243, 243, 250);
+    border-left: solid  rgb(243, 243, 250);
+    border-right: solid  rgb(243, 243, 250);
+    border-bottom: solid rgb(243, 243, 250);
+}
+.card-header {
+    background-image: linear-gradient(to right, #040000, #1A5653, #C4AE78);
+}
+.card-body {
+    background:  #C4AE78;
+}
+hr {
+    border: 1px dotted  #C4AE78;
+}
+.site-footer {
+    background-color: #C4AE78;
+}
+
+.sch-button {
+    background-image: linear-gradient(to right, #040000, #1A5653, #C4AE78);
+}
