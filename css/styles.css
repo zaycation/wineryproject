@@ -57,3 +57,8 @@ hr {
 .sch-button {
     background-image: linear-gradient(to right, #040000, #1A5653, #C4AE78);
 }
+
+#iframeMap {
+    text-align: center;
+    width: 100%;
+}
