@@ -1,7 +1,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Bootsrap cdn-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
@@ -25,7 +24,8 @@
             </div>
         </div>
     </header>
-    <div class="navbar navbar-expand-sm navbar-light sticky-top">
+
+    <nav class="navbar navbar-expand-sm navbar-light sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand text-white" href="#">J&R</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarWine">
@@ -43,15 +43,56 @@
                         <a class="nav-link text-white" href="tour.html">Tour</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Shop</a>
+                        <a class="nav-link text-white" href="shop.html">Shop</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="shop.html">Contact</a>
+                        <a class="nav-link text-white" href="contact.html">Contact</a>
                     </li>
                 </ul>
+                <span class="navbar-text ml-auto">
+                    <a role="button" class="text-white" data-toggle="modal" id="loginButton"><i class="fa fa-sign-in"></i> Login</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title text-white">Login</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label text-white"> Remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-sm ml-1 signIn text-white">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
     <div class="page-title-container blurr-grapes col">
         <img class="img-blurr" src="img/blurr-grapes.jpg" alt="blur grape" width="100%">
         <div class="centered">Home</div>
@@ -84,14 +125,14 @@
                         <h3 class="card-header text-white">Facts At a Glance</h3>
                         <div class="card-body">
                             <dl class="row">
-                                <dt class="col-6">Founded</dt>
-                                <dd class="col-6">February 3, 2010</dd>
-                                <dt class="col-6">No. of Wineries in 2020</dt>
-                                <dd class="col-6">35</dd>
-                                <dt class="col-6">No. of Reviews in 2020</dt>
-                                <dd class="col-6">1344</dd>
-                                <dt class="col-6">Employees</dt>
-                                <dd class="col-6">1200</dd>
+                                <dt class="col-6 text-white">Founded</dt>
+                                <dd class="col-6 text-white">February 3, 2010</dd>
+                                <dt class="col-6 text-white">No. of Wineries in 2020</dt>
+                                <dd class="col-6 text-white">35</dd>
+                                <dt class="col-6 text-white">No. of Reviews in 2020</dt>
+                                <dd class="col-6 text-white">1344</dd>
+                                <dt class="col-6 text-white">Employees</dt>
+                                <dd class="col-6 text-white">1200</dd>
                             </dl>
                         </div>
                     </div>
@@ -101,22 +142,24 @@
        <br>
        <hr>
        <div class="row row-content align-items-center">
-        <div class="col-sm-4 col-md-3">
-            <h2 class="pl-5">Our Temecula Location</h2>
-        </div>
-        <div class="col">
-            <div class="media">
-                <div class="media-body align-self-center">
-                    <p class="d-none d-sm-block">
-                        Our Temecula winery produces handcrafted wines that represent some of 
-                        the best varietals grown in the Temecula Valley. If you are wine tasting in Temecula 
-                        stop by our beautiful outdoor tasting room. J&R also has 100 olive trees which they harvest 
-                        and press for fresh, delicious olive oil (available only at certain times of the year). 
-                    </p>
-                </div>
-                <img class="d-flex ml-3 img-fluid" src="img/outside-wine.jpg" alt="outside-wine" />
+            <div class="col-sm-4 col-md-3">
+                <h2 class="text-sm-left pl-5">Discover</h2>
             </div>
-        </div>
+            <div class="col">
+                <div class="media">
+                    <div class="media-body align-self-center">
+                        <h3 class="pb-5">Our Temecula Location</h3>
+                        <p class="d-none d-md-block">
+                            Our Temecula winery produces handcrafted wines that represent some of 
+                            the best varietals grown in the Temecula Valley. If you are wine tasting in Temecula 
+                            stop by our beautiful outdoor tasting room. J&R also has 100 olive trees which they harvest 
+                            and press for fresh, delicious olive oil (available only at certain times of the year). 
+                        </p>
+                    </div>
+                    <img class="d-flex ml-5 rounded img-fluid" src="img/outside-wine.jpg" alt="outside-wine" width="70%" />
+                </div>
+            </div>
+       </div>
         <br>
     </div>
     <br>
@@ -124,7 +167,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-2 offset-1">
-                    <h5>Links</h5>
+                    <h5 class="text-white">Links</h5>
                     <ul class="list-unstyled">
                         <li><a class="text-success" href="index.html">Home</a></li>
                         <li><a class="text-success" href="#">About</a></li>
@@ -133,7 +176,7 @@
                     </ul>
                 </div>
                 <div class="col-6 col-sm-5 text-center">
-                    <h5>Social</h5>
+                    <h5 class="text-white">Social</h5>
                     <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
                             class="fa fa-instagram"></i></a>
                     <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
@@ -154,5 +197,6 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/index.js"> </script>
 </body>
 </html>

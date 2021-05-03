@@ -58,6 +58,24 @@ hr {
     background-image: linear-gradient(to right, #040000, #1A5653, #C4AE78);
 }
 
+.modal-body {
+    background-color:  #C4AE78;
+}
+
+.signIn {
+    background-image: linear-gradient(to right, #040000, #1A5653, #C4AE78);
+}
+
+.modal-header {
+    background-image: linear-gradient(to right, #040000, #1A5653, #C4AE78);
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px; 
+}
+
 #iframeMap {
     text-align: center;
     width: 100%;
