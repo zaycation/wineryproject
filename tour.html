@@ -1,195 +1,327 @@
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Bootsrap cdn-->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
     <!--Css-->
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Wineries Project</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                    <a href="index.html"><img src="img/wet-vineyard.png" class="img-fluid"></a>
-                </div>
-                <div class="col">
-                    <h1>Welcome to J&R Wineries</h1>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-4 col-sm-3 col-md-2 align-self-center">
+            <a href="index.html"
+              ><img src="img/wet-vineyard.png" class="img-fluid"
+            /></a>
+          </div>
+          <div class="col">
+            <h1>Welcome to J&R Wineries</h1>
+          </div>
         </div>
+      </div>
     </header>
-    <div class="navbar navbar-expand-sm navbar-light sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand text-white" href="#">J&R</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarWine">
-                <span class="navbar-toggler"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarWine">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link text-white" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="club.html">Club</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="tour.html">Tour</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="shop.html">Shop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">J&R</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="navbarWine"
+        >
+          <span class="navbar-toggler"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarWine">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="club.html">Club</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="tour.html">Tour</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
-    </div>
+      </div>
+    </nav>
     <div class="page-title-container tour-header col">
-        <img class="img-blurr" src="img/tour-header.jpg" alt="tour" width="100%">
-        <div class="centered">Tour</div>
-    </div>
-    
-    <div class="tourcard justify-content-center">
-        Curious to see how a bottle of wine is made? Want to taste some of the best wines SoCal has to offer? Schedule a Tour of J&R Winery today! 
-    </div>
-
-    <div id="iframeMap">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1985.2089542750916!2d-117.02564996918731!3d33.54070185288968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db79acf5e6adc1%3A0x437d102c2276b45b!2s36320%20Monte%20De%20Oro%20Rd%2C%20Temecula%2C%20CA%2092592!5e1!3m2!1sen!2sus!4v1618464226362!5m2!1sen!2sus" width="915" height="400" style="border:1;" allowfullscreen="" loading="lazy"></iframe>
+      <img
+        class="img-blurr"
+        src="img/tour-header.jpg"
+        alt="tour"
+        width="100%"
+      />
+      <div class="centered">Tour</div>
     </div>
 
-    <div class="container-fluid">
-        <div class="row row-content">
-            <div class="col col-sm-6 mx-auto">
-                <div class="card">
-                    <h3 id="scheduleHeader" class="card-header text-white text-nowrap">Schedule a Tour</h3>
-                    <div class="card-body">
-                        <form id="reserveForm">
-                            <div class="form-group row">
-                                <label for="firstName" class="col-md-2 col-form-label">First Name</label>
-                                <div class="col-md-10">
-                                    <input type="text" class="form-control" id="firstName" name="firstName"
-                                        placeholder="First Name" />
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
-                                <div class="col-md-10">
-                                    <input type="text" class="form-control" id="lastName" name="lastName"
-                                        placeholder="Last Name" />
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
-                                <div class="col-5 col-md-3">
-                                    <input type="tel" class="form-control" id="areaCode" name="areaCode"
-                                        placeholder="Area code" />
-                                </div>
-                                <div class="col-7">
-                                    <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="email" class="col-md-2 col-form-label">Email</label>
-                                <div class="col-md-10">
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col offset-md-2">
-                                    Preferred Contact Method :
-                                    <div class="form-check form-check-inline">
-                                        <input type="radio" class="form-check-input" id="contactPhone" name="contactRadios"
-                                            value="phone" />
-                                        <label for="contactPhone" class="form-check-label">Phone</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input type="radio" class="form-check-input" id="contactEmail" name="contactRadios"
-                                            value="email" />
-                                        <label for="contactEmail" class="form-check-label">Email</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <label class="col-md-2 col-form-label" for="date">Date</label>
-                                <div class="col-sm-4">
-                                    <input class="form-control" type="date" id="date" name="date" placeholder="mm/dd/yyyy">
-                                </div>
-                                <label class="col-sm-2 col-form-label"> Party Size</label>
-                                <div class="col-sm-4">
-                                    <select class="form-control" name="numCampers" id="numCampers">
-                                        <option>Select...</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                    </select>
-                                </div>
-                            </div>
+    <div class="container">
+      <div class="tourcard justify-content-center align-item-center mb-4 ml-2">
+        Curious to see how a bottle of wine is made? Want to taste some of the
+        best wines SoCal has to offer? Schedule a Tour of J&R Winery today!
+      </div>
+    </div>
 
-                            <div class="form-group row">
-                                <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
-                                <div class="col-md-10">
-                                    <textarea class="form-control" id="feedback" name="feedback" rows="8"></textarea>
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col">
-                                    <button class="btn text-white sch-button" type="submit">Schedule</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+    <div class="container">
+      <div class="row row-content">
+        <div class="col-sm-12">
+          <div
+            class="card align-item-center justify-content-center"
+            id="iframeMap"
+            style="width:100px"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1985.2089542750916!2d-117.02564996918731!3d33.54070185288968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db79acf5e6adc1%3A0x437d102c2276b45b!2s36320%20Monte%20De%20Oro%20Rd%2C%20Temecula%2C%20CA%2092592!5e1!3m2!1sen!2sus!4v1618464226362!5m2!1sen!2sus"
+              width="680"
+              height="400"
+              style="border: 1"
+              allowfullscreen=""
+              loading="lazy"
+            >
+            </iframe>
+          </div>
         </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row row-content justify-content-center">
+        <div class="col mx-auto">
+          <div class="card">
+            <h3 id="scheduleHeader" class="card-header text-white text-nowrap">
+              Schedule a Tour
+            </h3>
+            <div class="card-body">
+              <form id="reserveForm">
+                <div class="form-group row">
+                  <label for="firstName" class="col-md-2 col-form-label"
+                    >First Name</label
+                  >
+                  <div class="col-md-10">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="firstName"
+                      name="firstName"
+                      placeholder="First Name"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="lastName" class="col-md-2 col-form-label"
+                    >Last Name</label
+                  >
+                  <div class="col-md-10">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="lastName"
+                      name="lastName"
+                      placeholder="Last Name"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="areaCode" class="col-md-2 col-form-label"
+                    >Contact Tel.</label
+                  >
+                  <div class="col-5 col-md-3">
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="areaCode"
+                      name="areaCode"
+                      placeholder="Area code"
+                    />
+                  </div>
+                  <div class="col-7">
+                    <input
+                      type="tel"
+                      class="form-control"
+                      name="telNum"
+                      placeholder="Tel. number"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="email" class="col-md-2 col-form-label"
+                    >Email</label
+                  >
+                  <div class="col-md-10">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="Email"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col offset-md-2">
+                    Preferred Contact Method :
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        id="contactPhone"
+                        name="contactRadios"
+                        value="phone"
+                      />
+                      <label for="contactPhone" class="form-check-label"
+                        >Phone</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        id="contactEmail"
+                        name="contactRadios"
+                        value="email"
+                      />
+                      <label for="contactEmail" class="form-check-label"
+                        >Email</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="row form-group">
+                  <label class="col-md-2 col-form-label" for="date">Date</label>
+                  <div class="col-sm-4">
+                    <input
+                      class="form-control"
+                      type="date"
+                      id="date"
+                      name="date"
+                      placeholder="mm/dd/yyyy"
+                    />
+                  </div>
+                  <label class="col col-form-label"> Party Size</label>
+                  <div class="col-sm-4">
+                    <select
+                      class="form-control"
+                      name="numCampers"
+                      id="numCampers"
+                    >
+                      <option>Select...</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label for="feedback" class="col-md-2 col-form-label"
+                    >Your Feedback</label
+                  >
+                  <div class="col-md-10">
+                    <textarea
+                      class="form-control"
+                      id="feedback"
+                      name="feedback"
+                      rows="8"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="row form-group">
+                  <div class="col">
+                    <button class="btn text-white sch-button" type="submit">
+                      Schedule
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer class="site-footer mt-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-4 col-sm-2 offset-1">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a class="text-success" href="index.html">Home</a></li>
-                        <li><a class="text-success" href="#">About</a></li>
-                        <li><a class="text-success" href="#">Sites</a></li>
-                        <li><a class="text-success" href="contactus.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-sm-5 text-center">
-                    <h5>Social</h5>
-                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
-                            class="fa fa-instagram"></i></a>
-                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
-                            class="fa fa-facebook"></i></a>
-                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
-                            class="fa fa-twitter"></i></a>
-                    <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i
-                            class="fa fa-youtube"></i></a>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <a role="button" class="btn btn-link text-success" href="tel:+12065551234">1-206-555-1234</a><br />
-                    <a role="button" class="btn btn-link text-success"
-                        href="mailto:J&Rwine@welcome.co">J&Rwine@Welcome.co</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-4 col-sm-2 offset-1">
+            <h5>Links</h5>
+            <ul class="list-unstyled">
+              <li><a class="text-success" href="index.html">Home</a></li>
+              <li><a class="text-success" href="#">About</a></li>
+              <li><a class="text-success" href="#">Sites</a></li>
+              <li><a class="text-success" href="contactus.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-sm-5 text-center">
+            <h5>Social</h5>
+            <a
+              class="btn btn-social-icon btn-instagram"
+              href="http://instagram.com/"
+              ><i class="fa fa-instagram"></i
+            ></a>
+            <a
+              class="btn btn-social-icon btn-facebook"
+              href="http://facebook.com/"
+              ><i class="fa fa-facebook"></i
+            ></a>
+            <a
+              class="btn btn-social-icon btn-twitter"
+              href="http://twitter.com/"
+              ><i class="fa fa-twitter"></i
+            ></a>
+            <a
+              class="btn btn-social-icon btn-youtube"
+              href="http://youtube.com/"
+              ><i class="fa fa-youtube"></i
+            ></a>
+          </div>
+          <div class="col-sm-4 text-center">
+            <a
+              role="button"
+              class="btn btn-link text-success"
+              href="tel:+12065551234"
+              >1-206-555-1234</a
+            ><br />
+            <a
+              role="button"
+              class="btn btn-link text-success"
+              href="mailto:J&Rwine@welcome.co"
+              >J&Rwine@Welcome.co</a
+            >
+          </div>
         </div>
+      </div>
     </footer>
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>
