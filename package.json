@@ -6,16 +6,24 @@
   "dependencies": {
     "bootstrap": "^4.6.0",
     "bootstrap-social": "^5.1.1",
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
   },
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "lite-server": "^2.6.1",
+    "copyfiles": "^2.2.0",
+    "rimraf": "^3.0.2",
+    "usemin-cli": "^0.6.0",
+    "imagemin-cli": "^5.1.0"
+    
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run lite",
     "lite": "lite-server",
-    "build": "npm run build"
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin contact.html -d dist --htmlmin -o dist/contact.html",
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
   },
   "author": "",
   "license": "ISC",
